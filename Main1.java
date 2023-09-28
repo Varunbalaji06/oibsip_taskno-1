@@ -302,12 +302,12 @@ class Myapp extends Frame implements ActionListener
                 // Validating inputs of Age,TrainNo and Date
                 if (!isInteger(Age)) 
                 {
-                    JOptionPane.showMessageDialog(null, "Age must be a valid integer.", "Input Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Age must be a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
 
                 if (!isInteger(TrainNo)) {
-                JOptionPane.showMessageDialog(null, "Train No must be a valid integer.", "Input Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Train No must be a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
                 return;
                 }
 
