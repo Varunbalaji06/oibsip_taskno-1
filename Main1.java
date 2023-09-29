@@ -87,7 +87,7 @@ class ConfirmationPage extends JFrame
         add(Book);
 
         // Button to register new passenger
-        b3 = new Button("Add Passenger");
+        b3 = new Button("Book Ticket");
         b3.setBackground(Color.RED);
         b3.setBounds(480,53, 180, 30);
         add(b3);
