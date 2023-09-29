@@ -10,6 +10,7 @@ class Login extends JFrame
     JTextField t1,t2;
     JButton b1;
     JLabel l1,l2;
+    JLabel user,pass;
     Login()
     {
         setLayout(null);
@@ -20,6 +21,18 @@ class Login extends JFrame
         l1.setForeground(Color.BLUE);
         l1.setBounds(130,10,300,30);
         add(l1);
+
+        user = new JLabel("User Id");
+        user.setFont(new Font("Times new Roman", Font.BOLD,15));
+        user.setForeground(Color.BLACK);
+        user.setBounds(30,60,120,30);
+        add(user);
+
+        pass = new JLabel("Password");
+        pass.setFont(new Font("Times new Roman", Font.BOLD,15));
+        pass.setForeground(Color.BLACK);
+        pass.setBounds(30,100,120,30);
+        add(pass);
 
         t1 = new JTextField(60);
         t2 = new JPasswordField(60);
@@ -43,7 +56,7 @@ class Login extends JFrame
                 if(t1.getText().toString().equals("varun") && t2.getText().toString().equals("varun01"))
                 {
                     dispose();
-                    ConfirmationPage p = new ConfirmationPage();
+                    BookingPage p = new BookingPage();
                 }    
                 else
                 {
@@ -56,14 +69,14 @@ class Login extends JFrame
     }
 }
 
-class ConfirmationPage extends JFrame 
+class BookingPage extends JFrame 
 {
     Label Book;
     Button b3;
-    ConfirmationPage()
+    BookingPage()
     {
         // Window Code 
-        super("Confirmation Page");
+        super("Booking Page");
         setSize(700, 400);
         setLayout(null);
         setVisible(true);
